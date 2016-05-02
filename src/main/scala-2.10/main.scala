@@ -31,7 +31,11 @@ object Recommend {
     // Build the recommendation model using ALS
     val rank = 10
     val numIterations = 10
-    val model = ALS.train(ratings, rank, numIterations, 0.01)
+    val model = ALS.trainImplicit(
+      ratings = ratings,
+      rank = rank,
+      iterations = numIterations
+    )
 
     // Evaluate the model on rating data
     val userProducts = ratings.map { case Rating(user, product, rate) =>
