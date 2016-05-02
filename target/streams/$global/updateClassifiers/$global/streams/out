@@ -6,7 +6,7 @@
 [debug] == resolving dependencies for default#dekd$sources_2.10;1.0 [compile]
 [debug] == resolving dependencies default#dekd$sources_2.10;1.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@34b8beb1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b0e341f
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-library;2.10.4
@@ -150,21 +150,9 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar(src)
-[debug] 		tried /Users/Galle/.ivy2/local/org.scala-lang/jline/2.10.4/srcs/jline-sources.jar
-[debug] 		tried https://jcenter.bintray.com/org/scala-lang/jline/2.10.4/jline-2.10.4-sources.jar
-[info] downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.4/jline-2.10.4-sources.jar ...
-[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.4/jline-2.10.4-sources.jar
-[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/jline/2.10.4/jline-2.10.4-sources.jar.sha1
-[debug] sha1 OK for https://jcenter.bintray.com/org/scala-lang/jline/2.10.4/jline-2.10.4-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#jline;2.10.4!jline.jar(src) (5057ms)
-[debug] 		tried /Users/Galle/.ivy2/local/org.fusesource.jansi/jansi/1.4/srcs/jansi-sources.jar
-[debug] 		tried https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar
-[info] downloading https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar ...
-[debug] 	jcenter: downloading https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar
-[debug] 	jcenter: downloading https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar.sha1
-[debug] sha1 OK for https://jcenter.bintray.com/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar
-[info] 	[SUCCESSFUL ] org.fusesource.jansi#jansi;1.4!jansi.jar(src) (1523ms)
-[debug] :: resolution report :: resolve 47ms :: artifacts dl 6612ms
+[debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar(src)
+[debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(src)
+[debug] :: resolution report :: resolve 700ms :: artifacts dl 29ms
 [debug] 	report for default#dekd$sources_2.10;1.0 compile produced in /Users/Galle/IdeaProjects/Dekd/target/resolution-cache/reports/default-dekd$sources_2.10-compile.xml
 [debug] 	report for default#dekd$sources_2.10;1.0 runtime produced in /Users/Galle/IdeaProjects/Dekd/target/resolution-cache/reports/default-dekd$sources_2.10-runtime.xml
 [debug] 	report for default#dekd$sources_2.10;1.0 test produced in /Users/Galle/IdeaProjects/Dekd/target/resolution-cache/reports/default-dekd$sources_2.10-test.xml
@@ -178,4 +166,4 @@
 [debug] 	report for default#dekd$sources_2.10;1.0 docs produced in /Users/Galle/IdeaProjects/Dekd/target/resolution-cache/reports/default-dekd$sources_2.10-docs.xml
 [debug] 	report for default#dekd$sources_2.10;1.0 pom produced in /Users/Galle/IdeaProjects/Dekd/target/resolution-cache/reports/default-dekd$sources_2.10-pom.xml
 [debug] 	report for default#dekd$sources_2.10;1.0 scala-tool produced in /Users/Galle/IdeaProjects/Dekd/target/resolution-cache/reports/default-dekd$sources_2.10-scala-tool.xml
-[debug] 	resolve done (47ms resolve - 6612ms download)
+[debug] 	resolve done (700ms resolve - 29ms download)

@@ -16,13 +16,13 @@ object Recommend {
     // Set up environment
     val conf = new SparkConf()
       .setAppName("RecommendDekd")
-      .set("spark.executor.memory", "2g")
+      .set("spark.executor.memory", "3.75g")
       .setMaster("local[2]")
 
     val sc = new SparkContext(conf)
 
     // Load and parse the data
-    val path = "/Users/Galle/Dekd/fav_story_train.csv"
+    val path = "gs://dekd/fav_story_train.csv"
     val data = sc.textFile(path).mapPartitions(_.drop(1))
     val ratings = data.map(_.split(',') match { case Array(user, item, date, rate) =>
       Rating(user.toInt, item.toInt, rate.toDouble)
