@@ -1,9 +1,28 @@
 import sun.security.util.PathList
+import _root_.sbtassembly.AssemblyPlugin.autoImport._
+import _root_.sbtassembly.PathList
 
-name := "Dekd"
+lazy val commonSettings = Seq(
+  name := "Dekd"
+  version := "1.0"
+  scalaVersion := "2.10.5"
+)
+scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
-version := "1.0"
+mainClass in Compile := Some("com.github.galeree.dekd")
 
-scalaVersion := "2.10.4"
+libraryDependencies ++= {
+  val akkaV       = "2.3.14"
+  val akkaStreamV = "2.0.1"
+  val scalaTestV  = "2.2.5"
+  Seq(
+    "org.apache.spark"  %% "spark-core"                           % "1.6.0" % "provided",
+    "org.apache.spark"  %% "spark-mllib"                          % "1.6.0",
+  )
+}
 
-artifactName := { (sv: ScalaVersion, module: ModuleID, artifact: Artifact) => "Recommender.jar" }
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case "reference.conf"              => MergeStrategy.concat
+  case _                             => MergeStrategy.first
+}
